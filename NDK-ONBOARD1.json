@@ -1,0 +1,141 @@
+[
+  {
+    "name": "NDK-ONBOARD1",
+    "description": "NDK Switch Onboard",
+    "tags": [],
+    "deviceTypes": [
+      {
+        "productFamily": "Switches and Hubs",
+        "productSeries": "Cisco Catalyst 9200 Series Switches"
+      }
+    ],
+    "softwareType": "IOS",
+    "softwareVariant": "XE",
+    "templateContent": "hostname {{ hostName }}\n!\nip domain name {{ ipDomainName }} \n!\nnetconf-yang ssh port 830\n!\nend\n\n",
+    "rollbackTemplateContent": "",
+    "templateParams": [
+      {
+        "parameterName": "ipDomainName",
+        "dataType": "STRING",
+        "defaultValue": "norddjurs.dk",
+        "description": "IP Domain Name",
+        "required": true,
+        "notParam": false,
+        "paramArray": false,
+        "instructionText": "IP Domain Name",
+        "group": null,
+        "order": 2,
+        "customOrder": 0,
+        "selection": {
+          "selectionType": null,
+          "selectionValues": {},
+          "defaultSelectedValues": [],
+          "id": null
+        },
+        "range": [],
+        "key": null,
+        "provider": null,
+        "binding": "",
+        "sensitiveField": false,
+        "displayName": "IP Domain Name"
+      },
+      {
+        "parameterName": "hostName",
+        "dataType": "STRING",
+        "defaultValue": null,
+        "description": "Switch host name",
+        "required": true,
+        "notParam": false,
+        "paramArray": false,
+        "instructionText": "Switch host name",
+        "group": null,
+        "order": 1,
+        "customOrder": 1,
+        "selection": {
+          "selectionType": null,
+          "selectionValues": {},
+          "defaultSelectedValues": [],
+          "id": null
+        },
+        "range": [],
+        "key": null,
+        "provider": null,
+        "binding": "",
+        "sensitiveField": false,
+        "displayName": "Switch host name"
+      }
+    ],
+    "rollbackTemplateParams": [],
+    "composite": false,
+    "containingTemplates": [],
+    "language": "JINJA",
+    "promotedTemplateContent": "hostname {{ hostName }}\n!\nip domain name {{ ipDomainName }} \n!\nnetconf-yang ssh port 830\n!\nend\n\n",
+    "promotedTemplateParams": [
+      {
+        "parameterName": "ipDomainName",
+        "dataType": "STRING",
+        "defaultValue": "norddjurs.dk",
+        "description": "IP Domain Name",
+        "required": true,
+        "notParam": false,
+        "paramArray": false,
+        "instructionText": "IP Domain Name",
+        "group": null,
+        "order": 2,
+        "customOrder": 0,
+        "selection": {
+          "selectionType": null,
+          "selectionValues": {},
+          "defaultSelectedValues": [],
+          "id": null
+        },
+        "range": [],
+        "key": null,
+        "provider": null,
+        "binding": "",
+        "sensitiveField": false,
+        "id": null,
+        "displayName": "IP Domain Name"
+      },
+      {
+        "parameterName": "hostName",
+        "dataType": "STRING",
+        "defaultValue": null,
+        "description": "Switch host name",
+        "required": true,
+        "notParam": false,
+        "paramArray": false,
+        "instructionText": "Switch host name",
+        "group": null,
+        "order": 1,
+        "customOrder": 1,
+        "selection": {
+          "selectionType": null,
+          "selectionValues": {},
+          "defaultSelectedValues": [],
+          "id": null
+        },
+        "range": [],
+        "key": null,
+        "provider": null,
+        "binding": "",
+        "sensitiveField": false,
+        "id": null,
+        "displayName": "Switch host name"
+      }
+    ],
+    "customParamsOrder": false,
+    "createTime": 1666169775689,
+    "lastUpdateTime": 1666169775690,
+    "latestVersionTime": 1666169775871,
+    "validationErrors": {
+      "templateErrors": [],
+      "rollbackTemplateErrors": [],
+      "templateId": "d36c140d-b33d-48e7-a446-f29b0139f23d",
+      "templateVersion": null
+    },
+    "noOfConflicts": 0,
+    "documentDatabase": false,
+    "projectAssociated": true
+  }
+]
